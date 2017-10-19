@@ -1,0 +1,16 @@
+{
+    "name": "zhangxingzhi/demiurge",
+    "description": "The app database composer",
+    "keywords": ["demiurge", "app", "api"],
+    "require": {
+        "silex/silex": "~2.0",
+        "doctrine/dbal": "~2.2",
+        "monolog/monolog": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "classmap": [ "app/AppKernel.php" ]
+    }
+}
