@@ -1,69 +1,14 @@
-Symfony Standard Edition
-========================
+**框架说明**
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
-
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
-
-What's inside?
---------------
-
-The Symfony Standard Edition is configured with the following defaults:
-
-  * An AppBundle you can use to start coding;
-
-  * Twig as the only configured template engine;
-
-  * Doctrine ORM/DBAL;
-
-  * Swiftmailer;
-
-  * Annotations enabled for everything.
-
-It comes pre-configured with the following bundles:
-
-  * **FrameworkBundle** - The core Symfony framework bundle
-
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
-
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
-
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
-
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
-
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
-
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
-
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  https://symfony.com/doc/3.1/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.1/doctrine.html
-[8]:  https://symfony.com/doc/3.1/templating.html
-[9]:  https://symfony.com/doc/3.1/security.html
-[10]: https://symfony.com/doc/3.1/email.html
-[11]: https://symfony.com/doc/3.1/logging.html
-[12]: https://symfony.com/doc/3.1/assetic/asset_management.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
+*项目采用symfony3.3.10二次开发，实现以下功能*
+* 用户系统封装
+* 添加serviceKernel（采用单例模式），方便在程序各个地方获取到kernel，在配置service时，可以减少依赖，直接获取
+* session 存储到redis 中，解决多服务器session共享问题, redis地址配置在parameter.yml的session_handler_redis选项，
+    有效期目前写死，如有需要，可以修改配置，通过配置服务进行初始化，service配置是app.redis_session_handle
+* asset 前端资源配置，添加版本号，域名配置等
+* 接口幂等性校验（初步实现，还需要根据实际业务进行调整）
+    -   Custom\WebBundle\Event\ApiIdempotentListener
+    -   配置在 app/config/services.yml
+* json 返回体定义
+    -   Custom\WebBundle\Utils\R
+    
