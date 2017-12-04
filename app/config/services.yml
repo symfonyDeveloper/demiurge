@@ -15,6 +15,7 @@ services:
         class: Custom\WebBundle\Handle\RedisSessionHandle
         arguments: ["%session_handler_redis%"]
 
+    # 接口幂等性校验
     api.idempotent:
         class: Custom\WebBundle\Event\ApiIdempotentListener
         tags:

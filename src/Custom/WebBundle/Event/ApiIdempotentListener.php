@@ -11,7 +11,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\VarDumper\VarDumper;
 
 /**
- * Created by PhpStorm.
+ * 接口幂等性 校验
  * User: zhangxingz
  * Date: 2017/11/24
  * Time: 15:49
@@ -19,8 +19,6 @@ use Symfony\Component\VarDumper\VarDumper;
 class ApiIdempotentListener implements EventSubscriberInterface
 {
     /**
-     * 接口幂等性 校验
-     *
      * @param GetResponseEvent $event
      */
     public function onKernelRequest(GetResponseEvent $event)
@@ -54,7 +52,7 @@ class ApiIdempotentListener implements EventSubscriberInterface
      */
     public static function getSubscribedEvents()
     {
-        // 路由监听的优先级是32， 在路由处理完之后处理，可以指定bundle 是否开启
+        // 路由监听的优先级是32， 在路由处理完之后处理
         return array(
             KernelEvents::REQUEST => array(
                 array('onKernelRequest', 28),
