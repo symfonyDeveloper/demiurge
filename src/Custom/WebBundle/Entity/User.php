@@ -15,7 +15,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\Table(name="app_users")
  * @ORM\Entity(repositoryClass="Custom\WebBundle\Repository\UserRepository")
  */
-class User implements UserInterface, \Serializable
+class User implements UserInterface, \Serializable, \JsonSerializable
 {
     /**
      * @ORM\Column(type="integer")
@@ -141,5 +141,10 @@ class User implements UserInterface, \Serializable
         $this->isActive = $isActive;
     }
 
+    public function jsonSerialize()
+    {
+        $vars = get_object_vars($this);
 
+        return $vars;
+    }
 }

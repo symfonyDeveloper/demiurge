@@ -26,4 +26,16 @@ class UserRepository extends EntityRepository implements UserLoaderInterface
         }
         return $result;
     }
+
+    public function listUser($limit, $offset) {
+        $query = $this->createQueryBuilder('p')
+            ->setFirstResult($offset)
+            ->setMaxResults($limit)
+//            ->where('p.price > :price')
+//            ->setParameter('price', '19.99')
+//            ->orderBy('p.price', 'ASC')
+            ->getQuery();
+
+        return $query->getResult();
+    }
 }
