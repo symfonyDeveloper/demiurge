@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Systemsettings list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Paramid</th>
+                <th>Paramtype</th>
+                <th>Paramkey</th>
+                <th>Paramvalue</th>
+                <th>Memo</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for systemSetting in systemSettings %}
+            <tr>
+                <td><a href="{{ path('syssetting_show', { 'id': systemSetting.id }) }}">{{ systemSetting.id }}</a></td>
+                <td>{{ systemSetting.paramId }}</td>
+                <td>{{ systemSetting.paramType }}</td>
+                <td>{{ systemSetting.paramKey }}</td>
+                <td>{{ systemSetting.paramValue }}</td>
+                <td>{{ systemSetting.memo }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('syssetting_show', { 'id': systemSetting.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('syssetting_edit', { 'id': systemSetting.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('syssetting_new') }}">Create a new systemSetting</a>
+        </li>
+    </ul>
+{% endblock %}

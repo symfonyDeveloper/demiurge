@@ -1,13 +1,16 @@
 <?php
 
 /**
- * Created by PhpStorm.
+ * serviceKernel
+ * 单例模式，减少各个类的依赖
+ *
  * User: zhangxingz
  * Date: 2017/11/20
  * Time: 14:28
  */
 class ServiceKernel
 {
+
     private static $_instance;
 
     /**
@@ -53,5 +56,27 @@ class ServiceKernel
         $this->kernel = $kernel;
     }
 
+    /**
+     * 获取responsitory
+     *
+     * @return \Doctrine\Common\Persistence\ObjectRepository
+     */
+    public function getService($service) {
+        $topName = 'Custom';
+        if (strpos(":", $service)) {
+            list($topName, $service) = explode(":", $service, 2);
+        }
+        $bundleName = "WebBundle";
+        $className = explode(".", $service, 3);
+        if (count($className) == 3) {
+            $bundleName = current($className);
+        }
+        $class = $topName . "\\" . $bundleName . "\\Service\\" . $className[count($className) - 2] . "\\Impl\\" . $className[count($className) - 1] . "Impl";
+        if (class_exists($class)) {
+            return new $class;
+        }
+
+        throw new \Symfony\Component\Translation\Exception\NotFoundResourceException("Service not fount!");
+    }
 
 }

@@ -9,7 +9,18 @@
 namespace Custom\WebBundle\Service\User;
 
 
+use Custom\WebBundle\Entity\User;
+
 interface UserService
 {
-    public function getUser($id);
+    /**
+     * @param $id
+     * @return User
+     */
+    public function getUser(int $id);
+
+    /**
+     * @return array User
+     */
+    public function list();
 }

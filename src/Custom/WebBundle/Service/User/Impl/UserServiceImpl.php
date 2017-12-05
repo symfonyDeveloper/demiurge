@@ -6,18 +6,26 @@
  * Time: 10:47
  */
 
-namespace Custom\WebBundle\Service\Impl;
+namespace Custom\WebBundle\Service\User\Impl;
 
 
 use Custom\WebBundle\Common\BaseService;
+use Custom\WebBundle\Entity\User;
 use Custom\WebBundle\Service\User\UserService;
 
 class UserServiceImpl extends BaseService  implements UserService
 {
-    public function getUser($id)
+
+    public function getUser(int $id) : User
     {
-        $dao = $this->getEm()->getRepository("User");
+        $dao = $this->getRepository("User");
         return $dao->find($id);
+    }
+
+    public function list(): array
+    {
+        $dao = $this->getRepository("User");
+        return $dao->findAll();
     }
 
 }

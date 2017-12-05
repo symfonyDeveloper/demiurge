@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Systemsetting</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ systemSetting.id }}</td>
+            </tr>
+            <tr>
+                <th>Paramid</th>
+                <td>{{ systemSetting.paramId }}</td>
+            </tr>
+            <tr>
+                <th>Paramtype</th>
+                <td>{{ systemSetting.paramType }}</td>
+            </tr>
+            <tr>
+                <th>Paramkey</th>
+                <td>{{ systemSetting.paramKey }}</td>
+            </tr>
+            <tr>
+                <th>Paramvalue</th>
+                <td>{{ systemSetting.paramValue }}</td>
+            </tr>
+            <tr>
+                <th>Memo</th>
+                <td>{{ systemSetting.memo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('syssetting_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('syssetting_edit', { 'id': systemSetting.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

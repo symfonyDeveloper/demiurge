@@ -1,3 +1,7 @@
+custom_admin:
+    resource: "@CustomAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
 custom_web:
     resource: "@CustomWebBundle/Resources/config/routing.yml"
     prefix:   /
