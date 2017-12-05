@@ -11,8 +11,8 @@ namespace Custom\WebBundle\Utils;
 
 class R
 {
-    const SUCCESS_CODE = 200;
-    const ERROR_CODE = 0;
+    const SUCCESS_CODE = 0;
+    const ERROR_CODE = 500;
     const ERROR_MSG = "程序异常";
 
     public $code;
@@ -27,7 +27,7 @@ class R
      * @param array $data
      * @return R
      */
-    public static function success($code = R::SUCCESS_CODE, $data = [] ) {
+    public static function success($data = [], $code = R::SUCCESS_CODE) {
         $response = new self();
         $response->setCode($code);
         $response->setData($data);
