@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="{{ asset('/layui/css/layui.css') }}">
+        <script src="{{ asset('/layui/layui.js') }}"></script>
         {#<link rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico') }}" />#}
         {#<link rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico', 'cdn') }}" />#}
         {#<link rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico', 'cdn') }}" />#}
