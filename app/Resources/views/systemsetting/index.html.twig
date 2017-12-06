@@ -2,16 +2,30 @@
 
 {% block body %}
     <h1>用户列表</h1>
-
+    <ul>
+        <li>
+            <button type="button"></button>
+            <a href="{{ path('syssetting_new') }}">添加配置</a>
+        </li>
+    </ul>
     <table class="layui-table">
+        <colgroup>
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+
+            <col>
+        </colgroup>
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Paramid</th>
-                <th>Paramtype</th>
-                <th>Paramkey</th>
-                <th style="width: 120px;">Paramvalue</th>
-                <th>Memo</th>
+                <th>编号</th>
+                <th>配置id</th>
+                <th>配置类型</th>
+                <th>配置key</th>
+                {#<th>值</th>#}
+                <th>备注</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -22,7 +36,7 @@
                 <td>{{ systemSetting.paramId }}</td>
                 <td>{{ systemSetting.paramType }}</td>
                 <td>{{ systemSetting.paramKey }}</td>
-                <td>{{ systemSetting.paramValue }}</td>
+                {#<td>{{ systemSetting.paramValue }}</td>#}
                 <td>{{ systemSetting.memo }}</td>
                 <td>
                     <ul>
@@ -38,10 +52,4 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <ul>
-        <li>
-            <a href="{{ path('syssetting_new') }}">Create a new systemSetting</a>
-        </li>
-    </ul>
 {% endblock %}

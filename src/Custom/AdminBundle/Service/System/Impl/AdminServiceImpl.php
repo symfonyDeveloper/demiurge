@@ -58,7 +58,7 @@ class AdminServiceImpl extends BaseService implements AdminService
             $menu = $menuRepo->find($menuId);
             array_push($menuList, $menu);
         }
-        return $menuList;
+        return array_filter($menuList);
     }
 
     public function getUserPerms(int $userId)

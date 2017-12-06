@@ -15,11 +15,11 @@ class SysMenu
     /**
      * @var integer
      *
-     * @ORM\Column(name="menu_id", type="bigint", nullable=false)
+     * @ORM\Column(name="id", type="bigint", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $menuId;
+    private $id;
 
     /**
      * @var integer
@@ -77,9 +77,9 @@ class SysMenu
      *
      * @return integer
      */
-    public function getMenuId()
+    public function getId()
     {
-        return $this->menuId;
+        return $this->id;
     }
 
     /**

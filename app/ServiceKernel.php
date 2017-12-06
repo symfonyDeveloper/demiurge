@@ -67,7 +67,6 @@ class ServiceKernel
     }
 
 
-
     /**
      * 获取responsitory
      *

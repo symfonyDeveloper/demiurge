@@ -7,3 +7,8 @@ services:
         class: Custom\AdminBundle\Listener\AuthListener
         tags:
             - { name:kernel.event_subscriber, event: kernel.request, method: onKernelRequest  }
+    app.twig_extension:
+        class: Custom\AdminBundle\Twig\AdminMenuTwig
+        public: false
+        tags:
+            - { name: twig.extension }
