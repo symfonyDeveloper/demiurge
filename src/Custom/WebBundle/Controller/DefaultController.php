@@ -10,6 +10,7 @@ class DefaultController extends BaseController
 {
 
     use UserServiceTrait;
+    public static  $arr = [];
 
     public function indexAction()
     {

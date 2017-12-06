@@ -56,103 +56,135 @@ class SystemSetting
      */
     private $memo;
 
+
+
     /**
-     * @return int
+     * Get id
+     *
+     * @return integer
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
 
     /**
-     * @param int $id
+     * Set paramId
+     *
+     * @param string $paramId
+     *
+     * @return SystemSetting
      */
-    public function setId(int $id)
+    public function setParamId($paramId)
     {
-        $this->id = $id;
+        $this->paramId = $paramId;
+
+        return $this;
     }
 
     /**
+     * Get paramId
+     *
      * @return string
      */
-    public function getParamId(): string
+    public function getParamId()
     {
         return $this->paramId;
     }
 
     /**
-     * @param string $paramId
+     * Set paramType
+     *
+     * @param string $paramType
+     *
+     * @return SystemSetting
      */
-    public function setParamId(string $paramId)
+    public function setParamType($paramType)
     {
-        $this->paramId = $paramId;
+        $this->paramType = $paramType;
+
+        return $this;
     }
 
     /**
+     * Get paramType
+     *
      * @return string
      */
-    public function getParamType(): string
+    public function getParamType()
     {
         return $this->paramType;
     }
 
     /**
-     * @param string $paramType
+     * Set paramKey
+     *
+     * @param string $paramKey
+     *
+     * @return SystemSetting
      */
-    public function setParamType(string $paramType)
+    public function setParamKey($paramKey)
     {
-        $this->paramType = $paramType;
+        $this->paramKey = $paramKey;
+
+        return $this;
     }
 
     /**
+     * Get paramKey
+     *
      * @return string
      */
-    public function getParamKey(): string
+    public function getParamKey()
     {
         return $this->paramKey;
     }
 
     /**
-     * @param string $paramKey
+     * Set paramValue
+     *
+     * @param string $paramValue
+     *
+     * @return SystemSetting
      */
-    public function setParamKey(string $paramKey)
+    public function setParamValue($paramValue)
     {
-        $this->paramKey = $paramKey;
+        $this->paramValue = $paramValue;
+
+        return $this;
     }
 
     /**
+     * Get paramValue
+     *
      * @return string
      */
-    public function getParamValue(): string
+    public function getParamValue()
     {
         return $this->paramValue;
     }
 
     /**
-     * @param string $paramValue
+     * Set memo
+     *
+     * @param string $memo
+     *
+     * @return SystemSetting
      */
-    public function setParamValue(string $paramValue)
+    public function setMemo($memo)
     {
-        $this->paramValue = $paramValue;
+        $this->memo = $memo;
+
+        return $this;
     }
 
     /**
+     * Get memo
+     *
      * @return string
      */
-    public function getMemo(): string
+    public function getMemo()
     {
         return $this->memo;
     }
-
-    /**
-     * @param string $memo
-     */
-    public function setMemo(string $memo)
-    {
-        $this->memo = $memo;
-    }
-
-
-
 }
-

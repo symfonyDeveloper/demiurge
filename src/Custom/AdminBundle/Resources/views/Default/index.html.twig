@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-
-<table id="demo" lay-filter="test"></table>
+<h2>用户列表</h2>
+<table id="userList" lay-filter="test"></table>
 
 <script>
     layui.use('table', function(){
@@ -9,7 +9,7 @@
 
         //第一个实例
         table.render({
-            elem: '#demo'
+            elem: '#userList'
             ,height: 315
             ,url: '/admin/' //数据接口
             ,method: "post"

@@ -1,5 +1,6 @@
 <?php
 
+use Symfony\Component\Translation\Exception\NotFoundResourceException;
 /**
  * serviceKernel
  * 单例模式，减少各个类的依赖
@@ -13,6 +14,7 @@ class ServiceKernel
 
     private static $_instance;
 
+    private $container;
     /**
      * @var AppKernel
      */
@@ -57,6 +59,16 @@ class ServiceKernel
     }
 
     /**
+     * @return {@inheritdoc}
+     */
+    public function getContainer()
+    {
+        return $this->getKernel()->getContainer();
+    }
+
+
+
+    /**
      * 获取responsitory
      *
      * @return \Doctrine\Common\Persistence\ObjectRepository
@@ -76,7 +88,6 @@ class ServiceKernel
             return new $class;
         }
 
-        throw new \Symfony\Component\Translation\Exception\NotFoundResourceException("Service not fount!");
+        throw new NotFoundResourceException("Service not fount!");
     }
-
 }

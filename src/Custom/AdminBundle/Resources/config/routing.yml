@@ -5,3 +5,7 @@ custom_admin_syssetting:
 custom_admin_homepage:
     path:     /
     defaults: { _controller: CustomAdminBundle:Default:index }
+
+custom_admin_test:
+    path:     /test
+    defaults: { _controller: CustomAdminBundle:Default:test }

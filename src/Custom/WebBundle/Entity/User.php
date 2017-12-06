@@ -103,6 +103,31 @@ class User extends BaseEntity implements UserInterface, \Serializable,\ JsonSeri
     }
 
     /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIsActive()
+    {
+        return $this->isActive;
+    }
+
+
+    /**
      * @param mixed $id
      */
     public function setId($id)

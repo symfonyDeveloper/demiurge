@@ -78,9 +78,10 @@ class BaseService
      */
     public function getRepository($dao) {
         $em = $this->getDoctrine();
-        if (strpos(":", $dao)) {
+        if (strpos($dao, ":")) {
             return $em->getRepository($dao);
         }
+
         $nameList = array_slice(explode("\\",__NAMESPACE__), 0, 2);
         $bundle = implode($nameList);
         return $em->getRepository($bundle . ":" . $dao);
