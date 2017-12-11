@@ -2,6 +2,9 @@ custom_admin_syssetting:
     resource: "@CustomAdminBundle/Resources/config/routing/systemsetting.yml"
     prefix:   /syssetting
 
+custom_admin_user:
+    resource: "@CustomAdminBundle/Resources/config/routing/user_manager.yml"
+    prefix:   /user
 custom_admin_homepage:
     path:     /
     defaults: { _controller: CustomAdminBundle:Default:index }

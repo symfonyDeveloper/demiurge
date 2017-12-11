@@ -9,8 +9,9 @@
 namespace Custom\AdminBundle\Listener;
 
 
-use Custom\WebBundle\Entity\User;
+use Custom\AdminBundle\Utils\DocParser;
 use Custom\WebBundle\Traits\Service\SysServiceTrait;
+//use Doctrine\Common\Annotations\DocParser;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
@@ -31,24 +32,43 @@ class AuthListener implements EventSubscriberInterface
             return;
         }
         $request = $event->getRequest();
-        $routeName = $request->get("_route");
+        $parse = new DocParser();
+        $_controller = $request->get("_controller");
+        if (!strpos($_controller, "::")) {
+            return ;
+        }
+        list($controllerClass , $method) = explode("::", $_controller);
+        $class = new \ReflectionClass($controllerClass);
+        $doc = $class->getMethod($method)->getDocComment();
+        $info = $parse->parse($doc);
+        $perm = $info["Perm"] ?? false;
+
+        if (!$perm) {
+            return ;
+        }
         // 判断是否是后台菜单
         $routeList = $this->getSystemService()->getAllRoutes();
-        if (!in_array($routeName, $routeList)) {
+        if (!in_array($perm, $routeList)) {
             return ;
         }
         // 获取当前用户
         $container = \ServiceKernel::instance()->getContainer();
         if (null === $token = $container->get('security.token_storage')->getToken()) {
-            $event->setResponse(new Response("拒绝访问", 403));
+            $event->setResponse(new Response("未登录，拒绝访问", 403));
             return;
         }
         if (!is_object($user = $token->getUser())) {
-            $event->setResponse(new Response("拒绝访问", 403));
+            $event->setResponse(new Response("未登录，拒绝访问", 403));
             return;
         }
 
         // TODO 权限校验
+        $userMenuList = $this->getSystemService()->getUserPerms($user->getId());
+
+        if (!in_array($perm, $userMenuList)) {
+            $event->setResponse(new Response("没有菜单权限，拒绝访问", 403));
+            return;
+        }
         return;
     }
     /**

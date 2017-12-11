@@ -8,6 +8,7 @@
  */
 namespace Custom\WebBundle\Entity;
 
+use Custom\WebBundle\Common\BaseDao;
 use Custom\WebBundle\Common\BaseEntity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -16,7 +17,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  * @ORM\Table(name="app_users")
  * @ORM\Entity(repositoryClass="Custom\WebBundle\Repository\UserRepository")
  */
-class User extends BaseEntity implements UserInterface, \Serializable,\ JsonSerializable
+class User implements UserInterface, \Serializable,\ JsonSerializable
 {
     /**
      * @ORM\Column(type="integer")

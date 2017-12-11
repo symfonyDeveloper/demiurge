@@ -46,8 +46,9 @@ class AdminMenuTwig extends \Twig_Extension
 
     public function createSecondMenu($firstMenuId) {
         $menuList = [];
+
         foreach (self::$menus as $menu) {
-            if ($menu->getParentId() == $firstMenuId) {
+            if (!is_null($menu) && $menu->getParentId() == $firstMenuId) {
                 array_push($menuList, $menu);
             }
         }

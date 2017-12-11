@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+{% block bread %}
+    <div class="layui-row layui-bg-gray">
+        <div class="layui-col-md8 layui-col-md-offset1">
+            <h3 class="text-left">用户列表</h3>
+        </div>
+        <div class="layui-col-md3">
+            <a class="layui-btn layui-btn-normal text-center" href="{{ path('admin_user_add') }}">添加</a>
+        </div>
+    </div>{% endblock %}
+{% block body %}
+    {# total items count #}
+{#    <div class="count">
+        {{ pagination.getTotalItemCount }}
+    </div>#}
+    <table  class="layui-table">
+        <thead>
+        <tr>
+            {# sorting of properties based on query components #}
+            <th>编号</th>
+            <th>邮箱</th>
+            <th>用户昵称</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        {# table body #}
+        <tbody>
+        {% for user in pagination %}
+            <tr {% if loop.index is odd %}class="color"{% endif %}>
+                <td>{{ user.id }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.username}}</td>
+                <td>
+                    {#{% if user.isActive == 1 %}启用{% else %}禁用{% endif %}#}
+                    <a href="{{ path('admin_user_update', {id:  user.id}) }}">更新</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {# display navigation #}
+    <div class="navigation">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+{% endblock %}

@@ -3,7 +3,7 @@
 namespace Custom\AdminBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Doctrine\Common\Collections\ArrayCollection;
 /**
  * AppUsers
  *
@@ -12,6 +12,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class AppUsers
 {
+    public function __construct()
+    {
+        $this->products = new ArrayCollection();
+    }
+
     /**
      * @var integer
      *

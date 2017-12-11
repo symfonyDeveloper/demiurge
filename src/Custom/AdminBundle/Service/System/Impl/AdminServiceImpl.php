@@ -8,7 +8,6 @@
 
 namespace Custom\AdminBundle\Service\System\Impl;
 
-
 use Custom\AdminBundle\Entity\SysMenu;
 use Custom\AdminBundle\Entity\SysUserRole;
 use Custom\AdminBundle\Entity\SysRoleMenu;
@@ -69,7 +68,10 @@ class AdminServiceImpl extends BaseService implements AdminService
          */
         $perms = [];
         foreach ($menus as $menu) {
-            array_push($perms, $menu->getPerms());
+            if (!is_null($menu->getPerms())) {
+                array_push($perms, $menu->getPerms());
+            }
+            continue;
         }
         return array_unique($perms);
     }
@@ -83,7 +85,10 @@ class AdminServiceImpl extends BaseService implements AdminService
          * @var $menu SysMenu
          */
         foreach ($roleList as $menu) {
-            array_push($perms, $menu->getPerms());
+            if (!is_null($menu->getPerms())) {
+                array_push($perms, $menu->getPerms());
+            }
+            continue;
         }
         return array_unique($perms);
     }
