@@ -1,84 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>管理后台</title>
-    <link rel="stylesheet" href="{{ asset('/layui/css/layui.css') }}">
-    <script src="{{ asset('/layui/layui.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
-</head>
-<body class="layui-layout-body">
-<div class="layui-layout layui-layout-admin">
-    <div class="layui-header">
-        <div class="layui-logo">后台布局</div>
-        <!-- 头部区域（可配合layui已有的水平导航） -->
-        <ul class="layui-nav layui-layout-left">
-            <li class="layui-nav-item"><a href="{{ path("custom_admin_homepage") }}">首页</a></li>
-            <li class="layui-nav-item"><a href="">系统配置</a></li>
-            {#<li class="layui-nav-item"><a href="">用户</a></li>#}
-            {#<li class="layui-nav-item">#}
-                {#<a href="javascript:;">其它系统</a>#}
-                {#<dl class="layui-nav-child">#}
-                    {#<dd><a href="">邮件管理</a></dd>#}
-                    {#<dd><a href="">消息管理</a></dd>#}
-                    {#<dd><a href="">授权管理</a></dd>#}
-                {#</dl>#}
-            {#</li>#}
-        </ul>
-        <ul class="layui-nav layui-layout-right">
-            <li class="layui-nav-item">
-                <a href="javascript:;">
-                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                    {{ app.user.email }}
-                </a>
-                {#<dl class="layui-nav-child">#}
-                    {#<dd><a href="">基本资料</a></dd>#}
-                    {#<dd><a href="">安全设置</a></dd>#}
-                {#</dl>#}
-            </li>
-            <li class="layui-nav-item"><a href="{{ path('logout') }}">退出</a></li>
-        </ul>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <div class="layui-side layui-bg-black" id="nav1">
-        <div class="layui-side-scroll">
-            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+    <title>后台管理</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.css') }}">
+
+    <!-- Add custom CSS here -->
+    <link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/sb-admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css') }}">
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="{{ asset('/css/morris-0.4.3.min.css') }}">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ path('custom_admin_homepage') }}">管理首页</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
                 {% for menu in  generate_first_menu(app.user.id) %}
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">{{ menu.name }}</a>
-                        <dl class="layui-nav-child">
-                        {% for second in generate_second_menu(menu.id) %}
-                            <dd><a href="{{ path(second.url) }}">{{ second.name }}</a></dd>
-                        {% endfor %}
-                        </dl>
-                    </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> <strong>{{ menu.name }} </strong><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    {% for second in generate_second_menu(menu.id) %}
+                        <li><a href="{{ path(second.url) }}">{{ second.name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </li>
                 {% endfor %}
             </ul>
+
+            <ul class="nav navbar-nav navbar-right navbar-user">
+                <li class="message-preview"><span class="avatar"></span></li>
+                <li class="">
+                    <a href="#" class="" data-toggle=""><span class="" style="font-size: 20px;">Hi. {{ app.user.username }}</span> </a>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+<!-- /#body -->
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+            {% block header %}页面头{% endblock %}
+            </div>
+            <div class="row">
+                <ol class="breadcrumb">
+                    {% block bread %}
+                        <li class="active">面包屑</li>
+                    {% endblock %}
+                </ol>
+            </div>
         </div>
     </div>
 
-    <div class="layui-body">
-        <div style="padding: 5px;" class="layui-bg-gray"></div>
-        {% block bread %}
-        {% endblock %}
-        <div style="padding: 5px;" class="layui-bg-gray"></div>
-
-        {% block body %}{% endblock %}
-    </div>
-
-    <div class="layui-footer">
-        联系qq: 1083183034
-    </div>
+{% block body %}内容{% endblock %}
 </div>
-<script>
-    //JavaScript代码区域
-    layui.use('element', function(){
-        var element = layui.element;
-    });
-</script>
 
-{% block javascripts %}{% endblock %}
+</div>
+    <!-- JavaScript -->
+<script src="{{ asset('/js/jquery-1.10.2.js') }}"></script>
+<script src="{{ asset('/js/bootstrap.js') }}"></script>
+
+<!-- Page Specific Plugins -->    <script src="{{ asset('/js/raphael-min.js') }}"></script>
+<script src="{{ asset('js/morris-0.4.3.min.js') }}"></script>
+<script src="{{ asset('js/morris/chart-data-morris.js') }}"></script>
+<script src="{{ asset('js/tablesorter/jquery.tablesorter.js') }}"></script>
+<script src="{{ asset('/js/tablesorter/tables.js') }}"></script>
+
 </body>
 </html>
