@@ -5,6 +5,7 @@ namespace Custom\WebBundle\Controller;
 use Custom\WebBundle\Common\BaseController;
 use Custom\WebBundle\Common\BaseService;
 use Custom\WebBundle\Traits\Service\UserServiceTrait;
+use Custom\WebBundle\Utils\StringUtils;
 
 class DefaultController extends BaseController
 {

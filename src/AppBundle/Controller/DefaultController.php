@@ -4,6 +4,7 @@ namespace AppBundle\Controller;
 
 use Custom\WebBundle\Common\BaseController;
 use Custom\WebBundle\Utils\AesUtils;
+use Custom\WebBundle\Utils\StringUtils;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
