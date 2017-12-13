@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+{% block bread %}
+    <div class="layui-row layui-bg-gray">
+        <div class="layui-col-md8 layui-col-md-offset1">
+            <h3>添加菜单</h3>
+        </div>
+    </div>
+{% endblock %}
+{% block body %}
+    <div class="layui-row">
+
+    <form class="layui-form" action=""  method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label">上级菜单</label>
+            <div class="layui-input-block">
+                <input type="text" name="parentId" required  lay-verify="required" placeholder="请输入上级菜单id" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="name" required  lay-verify="required" placeholder="请输入名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">路由名</label>
+            <div class="layui-input-block">
+                <input type="text" name="url" required  lay-verify="required" placeholder="请输入路由名" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">权限标识</label>
+            <div class="layui-input-block">
+                <input type="text" name="perms" required  lay-verify="required" placeholder="请输入权限标识" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">类型</label>
+            <div class="layui-input-block">
+                <input type="text" name="perms" required  lay-verify="required" placeholder="0 目录  1 菜单  2 按钮" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">icon</label>
+            <div class="layui-input-block">
+                <input type="text" name="icon" required  lay-verify="required" placeholder="请输入icon" autocomplete="off" class="layui-input">
+            </div>
+            {#<a href="http://www.layui.com/doc/element/icon.html">获取icon</a>#}
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">排序</label>
+            <div class="layui-input-block">
+                <input type="text" name="orderNum" required  lay-verify="required" placeholder="请输入排序" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block bread %}
+    <div class="layui-row layui-bg-gray">
+        <div class="layui-col-md8 layui-col-md-offset1">
+            <h3>添加角色</h3>
+        </div>
+    </div>{% endblock %}
+{% block body %}
+    <div class="layui-row">
+    <form class="layui-form" action=""  method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色名</label>
+            <div class="layui-input-block">
+                <input type="text" name="role_name" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-block">
+                <input type="text" name="remark" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            </div>
+        </div>
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+admin_menu_list:
+    path: /list
+    defaults: { _controller: CustomAdminBundle:MenuManager:list }
+
+admin_menu_add:
+    path: /add
+    defaults: { _controller: CustomAdminBundle:MenuManager:add }
+
+admin_menu_update:
+    path: /update
+    defaults: { _controller: CustomAdminBundle:MenuManager:update }
+
+admin_menu_delete:
+    path: /delete
+    defaults: { _controller: CustomAdminBundle:MenuManager:delete }

@@ -1,10 +1,16 @@
-custom_admin_syssetting:
-    resource: "@CustomAdminBundle/Resources/config/routing/systemsetting.yml"
-    prefix:   /syssetting
-
+#用户管理
 custom_admin_user:
     resource: "@CustomAdminBundle/Resources/config/routing/user_manager.yml"
     prefix:   /user
+#角色管理
+custom_admin_role:
+    resource: "@CustomAdminBundle/Resources/config/routing/role_manager.yml"
+    prefix:   /role
+#菜单管理
+custom_admin_menu:
+    resource: "@CustomAdminBundle/Resources/config/routing/menu_manager.yml"
+    prefix:   /menu
+
 custom_admin_homepage:
     path:     /
     defaults: { _controller: CustomAdminBundle:Default:index }

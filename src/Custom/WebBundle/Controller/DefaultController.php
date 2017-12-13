@@ -5,6 +5,7 @@ namespace Custom\WebBundle\Controller;
 use Custom\WebBundle\Common\BaseController;
 use Custom\WebBundle\Common\BaseService;
 use Custom\WebBundle\Traits\Service\UserServiceTrait;
+use Custom\WebBundle\Utils\DateUtils;
 use Custom\WebBundle\Utils\StringUtils;
 
 class DefaultController extends BaseController
@@ -15,6 +16,7 @@ class DefaultController extends BaseController
 
     public function indexAction()
     {
+        $this->dump(DateUtils::getDay());
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
