@@ -2,63 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eeef1d1-806a-4410-a87a-a00b89d0c323" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/base-bak.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/css/morris-0.4.3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/css/sb-admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/spinning.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_spinning.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/flot/chart-data-flot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/flot/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/flot/jquery.flot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/flot/jquery.flot.pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/flot/jquery.flot.resize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/flot/jquery.flot.tooltip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/morris-0.4.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/morris/chart-data-morris.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/raphael-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/tablesorter/jquery.tablesorter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/asset/js/tablesorter/tables.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/asset/css/bootstrap.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/add.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/add.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/add.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/add.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/index.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/update.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/update.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/index.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" />
     </list>
     <ignored path="symfony_3_1_10.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,22 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="role_manager.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/role_manager.yml">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu_manager.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/menu_manager.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="523">
+              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+              <folding>
+                <element signature="e#1707#1713#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,56 +41,38 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="364">
+              <caret line="34" column="10" selection-start-line="6" selection-start-column="4" selection-end-line="34" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="23" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/add.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
-              <folding>
-                <element signature="e#60#84#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/update.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="84" />
-              <folding>
-                <element signature="e#60#84#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#a#0;n#li#1;n#ul#1;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base-bak.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base-bak.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="63" column="22" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="22" />
+            <state relative-caret-position="302">
+              <caret line="27" column="10" selection-start-line="5" selection-start-column="4" selection-end-line="27" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -202,20 +123,20 @@
         <option value="$PROJECT_DIR$/src/Custom/WebBundle/Utils/StringUtils.php" />
         <option value="$PROJECT_DIR$/src/Custom/WebBundle/Utils/DateUtils.php" />
         <option value="$PROJECT_DIR$/src/Custom/WebBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig" />
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/role_manager.yml" />
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/menu_manager.yml" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/MenuManagerController.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/add.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/update.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/add.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig" />
+        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" />
       </list>
     </option>
   </component>
@@ -273,6 +194,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asset" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,6 +314,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Role" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,12 +509,12 @@
       <workItem from="1512719445260" duration="1511000" />
       <workItem from="1512954605489" duration="23204000" />
       <workItem from="1513045396541" duration="112000" />
-      <workItem from="1513130136582" duration="18967000" />
+      <workItem from="1513130136582" duration="20114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149394000" />
+    <option name="totallyTimeSpent" value="150541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,7 +529,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2259542" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34961832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.49694657" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.50610685" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -849,43 +836,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <marker date="1513147403864" expanded="true" signature="214:1229" ph="{% block body ...%}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Entity/SysRole.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <marker date="1513147086843" expanded="true" signature="214:1184" ph="{% block body ...%}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-          <folding>
-            <marker date="1513147599246" expanded="true" signature="31:387" ph="{% block bread ...%}" />
-            <marker date="1513147599246" expanded="true" signature="388:1534" ph="{% block body ...%}" />
-            <marker date="1513147599246" expanded="true" signature="821:1372" ph="{% for role in pagination ...%}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,26 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#li#1;n#ul#1;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/update.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -1019,13 +954,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding>
+            <element signature="e#1707#1713#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="34" column="10" selection-start-line="6" selection-start-column="4" selection-end-line="34" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="24" column="84" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
-          <folding>
-            <element signature="e#60#84#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="302">
+          <caret line="27" column="10" selection-start-line="5" selection-start-column="4" selection-end-line="27" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="23" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
