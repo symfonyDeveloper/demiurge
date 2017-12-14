@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eeef1d1-806a-4410-a87a-a00b89d0c323" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/SystemSettingController.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/resetPasswd.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/user_manager.yml" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/user_manager.yml" />
     </list>
     <ignored path="symfony_3_1_10.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,66 +27,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="40" column="92" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
+            <state relative-caret-position="112">
+              <caret line="49" column="62" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#1611#1617#0#HTML" expanded="true" />
                 <element signature="e#1617#1623#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/add.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
-              <folding>
-                <element signature="e#1145#1168#0#HTML" expanded="true" />
-                <element signature="e#1512#1535#0#HTML" expanded="true" />
-                <element signature="e#1914#1937#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoleManagerController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2526">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="e#137#175#0#PHP" expanded="true" />
-                <marker date="1513235946117" expanded="true" signature="693:734" ph="select u fro... CustomAdminBundle" />
-                <marker date="1513235946117" expanded="true" signature="2568:2617" ph="delete from " />
-                <marker date="1513235946117" expanded="true" signature="2807:2876" ph="INSERT INTO sys_role_menu... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminMenuTwig.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-              <folding>
-                <element signature="e#130#182#0#PHP" expanded="true" />
+                <element signature="e#2864#2870#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,17 +45,27 @@
       <file leaf-file-name="UserManagerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="320">
+              <caret line="127" column="67" selection-start-line="127" selection-start-column="67" selection-end-line="127" selection-end-column="67" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
                 <element signature="e#137#176#0#PHP" expanded="true" />
-                <marker date="1513235916669" expanded="true" signature="694:736" ph="select u fro... CustomAdminBundle" />
-                <marker date="1513235916669" expanded="true" signature="2627:2668" ph="delete from " />
-                <marker date="1513235916669" expanded="true" signature="2627:2676" ph="delete from " />
-                <marker date="1513235916669" expanded="true" signature="2627:2677" ph="delete from " />
-                <marker date="1513235916669" expanded="true" signature="2866:2935" ph="INSERT into sys_user_role... " />
+                <marker date="1513236876034" expanded="true" signature="734:776" ph="select u fro... CustomAdminBundle" />
+                <marker date="1513236876034" expanded="true" signature="2667:2708" ph="delete from " />
+                <marker date="1513236876034" expanded="true" signature="2667:2716" ph="delete from " />
+                <marker date="1513236876034" expanded="true" signature="2667:2717" ph="delete from " />
+                <marker date="1513236876034" expanded="true" signature="2906:2975" ph="INSERT into sys_user_role... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_manager.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/user_manager.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Utils/MenuUtils.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/ServiceKernel.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/systemsetting/index.html.twig" />
@@ -157,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Utils/DocParse.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Utils/Perm.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/user_manager.yml" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Service/Rbac/UserService.php" />
         <option value="$PROJECT_DIR$/src/Custom/WebBundle/Common/BaseService.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Service/Rbac/Impl/UserServiceImpl.php" />
@@ -189,15 +148,17 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/doc/RBAC.md" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/update.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Listener/AuthListener.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/AdminService.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/Impl/AdminServiceImpl.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php" />
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" />
+        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/user_manager.yml" />
+        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/resetPasswd.html.twig" />
+        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -458,6 +419,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="User" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -488,8 +453,34 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Role" />
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdminBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,6 +507,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routing" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,6 +544,42 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony_3_1_10" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -560,15 +595,15 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\php-project\symfony_3_1_10\src\Custom\AdminBundle\Service\Rbac\Dao" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\php-project\symfony_3_1_10\src\Custom\AdminBundle\Resources\views\User" />
       <recent name="D:\php-project\symfony_3_1_10\web\asset\js" />
       <recent name="D:\php-project\symfony_3_1_10\web\asset" />
       <recent name="D:\php-project\symfony_3_1_10\web\asset\css" />
       <recent name="D:\php-project\symfony_3_1_10\app\Resources\views" />
-      <recent name="D:\php-project\symfony_3_1_10\src\Custom\AdminBundle\Resources\views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\php-project\symfony_3_1_10\src\Custom\AdminBundle\Service\Rbac\Dao" />
     </key>
   </component>
   <component name="RunManager">
@@ -647,12 +682,12 @@
       <workItem from="1512954605489" duration="23204000" />
       <workItem from="1513045396541" duration="112000" />
       <workItem from="1513130136582" duration="20179000" />
-      <workItem from="1513213900808" duration="16584000" />
+      <workItem from="1513213900808" duration="17690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167190000" />
+    <option name="totallyTimeSpent" value="168296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,7 +702,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29007635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29007635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.49694657" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.50610685" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -723,13 +758,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Common/twitter_bootstrap_v3_pagination.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -801,6 +829,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="170" column="14" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -830,13 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/user_manager.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="14" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1056,30 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="40" column="92" selection-start-line="40" selection-start-column="92" selection-end-line="40" selection-end-column="92" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#1611#1617#0#HTML" expanded="true" />
-            <element signature="e#1617#1623#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
-          <folding>
-            <element signature="e#1145#1168#0#HTML" expanded="true" />
-            <element signature="e#1512#1535#0#HTML" expanded="true" />
-            <element signature="e#1914#1937#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Listener/AuthListener.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -1114,22 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-            <element signature="e#137#176#0#PHP" expanded="true" />
-            <marker date="1513235916669" expanded="true" signature="694:736" ph="select u fro... CustomAdminBundle" />
-            <marker date="1513235916669" expanded="true" signature="2627:2668" ph="delete from " />
-            <marker date="1513235916669" expanded="true" signature="2627:2676" ph="delete from " />
-            <marker date="1513235916669" expanded="true" signature="2627:2677" ph="delete from " />
-            <marker date="1513235916669" expanded="true" signature="2866:2935" ph="INSERT into sys_user_role... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/SystemSettingController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1138,15 +1120,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
+          <folding>
+            <element signature="e#1145#1168#0#HTML" expanded="true" />
+            <element signature="e#1512#1535#0#HTML" expanded="true" />
+            <element signature="e#1914#1937#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2526">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="348">
+          <caret line="112" column="1" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
           <folding>
             <element signature="e#137#175#0#PHP" expanded="true" />
             <marker date="1513235946117" expanded="true" signature="693:734" ph="select u fro... CustomAdminBundle" />
             <marker date="1513235946117" expanded="true" signature="2568:2617" ph="delete from " />
             <marker date="1513235946117" expanded="true" signature="2807:2876" ph="INSERT INTO sys_role_menu... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/resetPasswd.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#81#87#0#HTML" expanded="true" />
+            <element signature="e#87#93#0#HTML" expanded="true" />
+            <element signature="e#93#99#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="127" column="67" selection-start-line="127" selection-start-column="67" selection-end-line="127" selection-end-column="67" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
+            <element signature="e#137#176#0#PHP" expanded="true" />
+            <marker date="1513236876034" expanded="true" signature="734:776" ph="select u fro... CustomAdminBundle" />
+            <marker date="1513236876034" expanded="true" signature="2667:2708" ph="delete from " />
+            <marker date="1513236876034" expanded="true" signature="2667:2716" ph="delete from " />
+            <marker date="1513236876034" expanded="true" signature="2667:2717" ph="delete from " />
+            <marker date="1513236876034" expanded="true" signature="2906:2975" ph="INSERT into sys_user_role... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Resources/config/routing/user_manager.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="49" column="62" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1611#1617#0#HTML" expanded="true" />
+            <element signature="e#1617#1623#0#HTML" expanded="true" />
+            <element signature="e#2864#2870#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

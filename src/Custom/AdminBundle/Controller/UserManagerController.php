@@ -13,6 +13,7 @@ use Custom\AdminBundle\Entity\AppUsers;
 use Custom\WebBundle\Common\BaseController;
 use Custom\AdminBundle\Utils\Perm;
 use Custom\WebBundle\Traits\Service\SysServiceTrait;
+use Custom\WebBundle\Utils\StringUtils;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -109,5 +110,23 @@ class UserManagerController extends BaseController
      */
     public function disaableAction(Request $request) {
         return $this->redirect($this->generateUrl("admin_user_list"));
+    }
+
+
+    /**
+     * 修改密码
+     *
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function resetPasswdAction(Request $request) {
+        if ($request->isMethod(Request::METHOD_POST) && StringUtils::isNotBlack($password = $request->request->get("password"))) {
+            $em = $this->getDoctrine()->getManager();
+            $user = $em->getRepository("CustomAdminBundle:AppUsers")->find($this->getUser()->getId());
+            $user->setPassword(md5($password));
+            $em->flush();
+            return $this->redirectToRoute("custom_admin_homepage");
+        }
+        return $this->render("CustomAdminBundle:User:resetPasswd.html.twig");
     }
 }

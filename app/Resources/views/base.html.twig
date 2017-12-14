@@ -47,14 +47,15 @@
                 </li>
                 {% endfor %}
             </ul>
-
             <ul class="nav navbar-nav navbar-right navbar-user">
-                <li class="message-preview"><span class="avatar"></span></li>
-                <li class="">
-                    <a href="#" class="" data-toggle=""><span class="" style="font-size: 20px;">Hi. {{ app.user.username }}</span> </a>
+                <li class="dropdown user-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {{ app.user.username }} <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('admin_user_reset_passwd') }}"><i class="fa fa-user"></i> 重置密码 </a></li>
+                        <li><a href="{{ path('logout') }}"><i class="fa fa-power-off"></i> 退出 </a></li>
+                    </ul>
                 </li>
             </ul>
-
         </div><!-- /.navbar-collapse -->
     </nav>
 
@@ -63,7 +64,9 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
+                {%  block title %}
                 <span style="font-size: 22px;"> &nbsp;&nbsp;&nbsp;{{ get_current_route(app.request).name|default("") }}</span>
+                {% endblock %}
             {% block headerButton %}{% endblock %}
             </div>
             <div class="row">
