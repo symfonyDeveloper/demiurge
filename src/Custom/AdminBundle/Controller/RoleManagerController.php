@@ -82,10 +82,32 @@ class RoleManagerController extends BaseController
             $role->setRoleName($request->request->get("role_name"));
             $role->setRemark($request->request->get("remark"));
             $em->flush();
+            // TODO 角色菜单
+            $conn = $this->get('database_connection');
+            $sql = "delete from sys_role_menu where role_id = :roleId ";
+            $conn->executeQuery($sql, ["roleId" =>  $role->getId()]);
+            $menuList = $request->get("menu");
+            foreach ($menuList as $roleId) {
+                $sql = "INSERT INTO sys_role_menu(role_id, menu_id) VALUES (:roleId, :menuId)";
+                $conn->executeQuery($sql, [
+                    "roleId" => $role->getId(),
+                    "menuId" => $roleId
+                ]);
+            }
             return $this->redirect($this->generateUrl("admin_role_list"));
         }
+        $firstMenu = $this->getDoctrine()->getManager()->getRepository("CustomAdminBundle:SysMenu")->findBy([
+            "parentId" => 0
+        ]);
+        $roleMenu = $em->getRepository("CustomAdminBundle:SysRoleMenu")->findBy(["roleId"  => $request->get("id")]);
+        $roleMenuIds = [];
+        foreach ($roleMenu as $item) {
+            array_push($roleMenuIds, $item->getMenuId());
+        }
         return $this->render("CustomAdminBundle:Role:update.html.twig", [
-            "role" => $role
+            "role" => $role,
+            "firstMenu" => $firstMenu,
+            "roleMenuIds" => $roleMenuIds ?? []
         ]);
     }
 

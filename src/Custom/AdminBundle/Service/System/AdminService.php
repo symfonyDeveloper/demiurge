@@ -9,6 +9,8 @@
 namespace Custom\AdminBundle\Service\System;
 
 
+use Custom\AdminBundle\Entity\SysMenu;
+
 interface AdminService
 {
 
@@ -36,4 +38,16 @@ interface AdminService
     public function getUserPerms(int $userId);
 
     public function getAllRoutes();
+
+    /**
+     * @param $url
+     * @return SysMenu
+     */
+    public function getRouteByUrl($url);
+
+    /**
+     * @param $url
+     * @return SysMenu
+     */
+    public function getParentRouteByUrl($url);
 }

@@ -10,6 +10,7 @@ namespace Custom\AdminBundle\Controller;
 
 
 use Custom\AdminBundle\Entity\AppUsers;
+use Custom\AdminBundle\Entity\SysMenu;
 use Custom\AdminBundle\Entity\SysRole;
 use Custom\AdminBundle\Form\UserType;
 use Custom\AdminBundle\Service\Rbac\Dao\Impl\UserDaoImpl;
@@ -57,15 +58,23 @@ class MenuManagerController extends BaseController
      */
     public function addAction(Request $request) {
         if ($request->getMethod() == Request::METHOD_GET) {
-            return $this->render("CustomAdminBundle:Menu:add.html.twig");
+            $firstMenuList = $this->getDoctrine()->getRepository("CustomAdminBundle:SysMenu")->findBy(["type" => 0]);
+            $secondMenuList = $this->getDoctrine()->getRepository("CustomAdminBundle:SysMenu")->findBy(["type" => 1]);
+            return $this->render("CustomAdminBundle:Menu:add.html.twig", [
+                "firstMenuList" => $firstMenuList,
+                "secondMenuList" => $secondMenuList
+            ]);
         }
-        $role = new SysRole();
-        $role->setRoleName($request->get("role_name"));
-        $role->setRemark($request->get("remark"));
-        $role->setCreateUserId($this->getUser()->getId());
-        $role->setCreateTime(new \DateTime());
+        $menu = new SysMenu();
+        $menu->setParentId($request->get("parent_id", 0));
+        $menu->setName($request->get("name"));
+        $menu->setUrl($request->get("url", ""));
+        $menu->setPerms($request->get("perms"));
+        $menu->setType($request->get("type"));
+        $menu->setIcon($request->get("icon"));
+        $menu->setOrderNum($request->get("order_num"));
         $em = $this->getDoctrine()->getManager();
-        $em->persist($role);
+        $em->persist($menu);
         $em->flush();
         return $this->redirect($this->generateUrl("admin_menu_list"));
     }
@@ -77,15 +86,27 @@ class MenuManagerController extends BaseController
      */
     public function updateAction(Request $request) {
         $em = $this->getDoctrine()->getManager();
-        $role = $em->getRepository("CustomAdminBundle:SysRole")->find($request->get("id"));
+        /**
+         * @var $menu SysMenu
+         */
+        $menu = $em->getRepository("CustomAdminBundle:SysMenu")->find($request->get("id"));
         if ($request->getMethod() == Request::METHOD_POST) {
-            $role->setRoleName($request->request->get("role_name"));
-            $role->setRemark($request->request->get("remark"));
+            $menu->setParentId($request->request->get("parentId"));
+            $menu->setName($request->request->get("name"));
+            $menu->setUrl($request->request->get("url", ""));
+            $menu->setPerms($request->request->get("perms"));
+            $menu->setType($request->request->get("type"));
+            $menu->setIcon($request->request->get("icon"));
+            $menu->setOrderNum($request->request->get("order_num"));
             $em->flush();
-            return $this->redirect($this->generateUrl("admin_role_list"));
+            return $this->redirect($this->generateUrl("admin_menu_list"));
         }
+        $firstMenuList = $this->getDoctrine()->getRepository("CustomAdminBundle:SysMenu")->findBy(["type" => 0]);
+        $secondMenuList = $this->getDoctrine()->getRepository("CustomAdminBundle:SysMenu")->findBy(["type" => 1]);
         return $this->render("CustomAdminBundle:Menu:update.html.twig", [
-            "role" => $role
+            "menu" => $menu,
+            "firstMenuList" => $firstMenuList,
+            "secondMenuList" => $secondMenuList
         ]);
     }
 

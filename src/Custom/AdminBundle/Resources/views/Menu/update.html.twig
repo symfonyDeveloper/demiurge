@@ -1,36 +1,68 @@
 {% extends 'base.html.twig' %}
-{% block bread %}
-    <div class="layui-row layui-bg-gray">
-        <div class="layui-col-md8 layui-col-md-offset1">
-            <h3>用户列表</h3>
-        </div>
-    </div>{% endblock %}
+
 {% block body %}
-    <div class="layui-row">
-    <form class="layui-form" action=""  method="post">
-        <div class="layui-form-item">
-            <label class="layui-form-label">用户名</label>
-            <div class="layui-input-block">
-                <input type="text" name="username" value="{{ user.username }}" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+    <form class="form-horizontal" method="post" action="">
+        <div class="form-group">
+            <label for="parentId" class="col-sm-1 control-label">上级菜单</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="parentId">
+                    {% for m in firstMenuList %}
+                        <option value="{{ m.id }}" {% if menu.parentId == m.id %}selected{% endif %}>{{ m.name }}</option>
+                        {% for smenu in secondMenuList %}
+                            {% if m.id == smenu.parentId %}
+                                <option value="{{ smenu.id }}" {% if menu.parentId == smenu.id %}selected{% endif %}>&nbsp;&nbsp;{{ smenu.name }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </select>
             </div>
         </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">邮箱</label>
-            <div class="layui-input-block">
-                <input type="text" name="email" value="{{ user.email }}" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+        <div class="form-group">
+            <label for="name" class="col-sm-1 control-label">名称</label>
+            <div class="col-sm-10">
+                <input type="text" name="name" value="{{ menu.name }}" class="form-control" id="name" placeholder="Password">
             </div>
         </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">密码</label>
-            <div class="layui-input-block">
-                <input type="text" name="password" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+        <div class="form-group">
+            <label for="url" class="col-sm-1 control-label">路由名</label>
+            <div class="col-sm-10">
+                <input type="text" name="url" value="{{ menu.url }}" class="form-control" id="url" placeholder="路由名">
             </div>
         </div>
-        <div class="layui-form-item">
-            <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+        <div class="form-group">
+            <label for="perms" class="col-sm-1 control-label">权限标识</label>
+            <div class="col-sm-10">
+                <input type="text" name="perms" value="{{ menu.perms }}" class="form-control" id="perms" placeholder="权限标识">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="type" class="col-sm-1 control-label">类型</label>
+            <div class="col-sm-10">
+                <select class="form-control"name="type">
+                    <option value="0" {% if menu.type == 0 %}selected{% endif %}>目录</option>
+                    <option value="1" {% if menu.type == 1 %}selected{% endif %}>菜单</option>
+                    <option value="2" {% if menu.type == 2 %}selected{% endif %}>按钮</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="icon" class="col-sm-1 control-label">icon</label>
+            <div class="col-sm-10">
+                <input type="text" name="icon" value="{{ menu.icon }}" class="form-control" id="icon" placeholder="icon">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="orderNum" class="col-sm-1 control-label">排序</label>
+            <div class="col-sm-10">
+                <input type="number" name="orderNum" value="{{ menu.orderNum }}" class="form-control" id="orderNum" placeholder="排序">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1" for="submit"></label>
+            <div  class="col-sm-10">
+                <button type="submit" class="btn btn-default" id="submit">提交</button>
+                <a href="javascript:history.back(-1)" class="btn btn-default">返回</a>
             </div>
         </div>
     </form>
-    </div>
 {% endblock %}

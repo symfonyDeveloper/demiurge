@@ -92,4 +92,26 @@ class AdminServiceImpl extends BaseService implements AdminService
         }
         return array_unique($perms);
     }
+
+    /**
+     * @param $url
+     * @return SysMenu
+     */
+    public function getRouteByUrl($url) {
+        $menuRepo = $this->getRepository("CustomAdminBundle:SysMenu");
+        return current($menuRepo->findBy(["url" => $url]));
+    }
+
+    /**
+     * @param $url
+     * @return SysMenu
+     */
+    public function getParentRouteByUrl($url) {
+        $route = $this->getRouteByUrl($url);
+        if (empty($route) || $route->getParentId() == 0) {
+            return null;
+        }
+        $parentMenu = $this->getRepository("CustomAdminBundle:SysMenu")->find($route->getParentId());
+        return $parentMenu;
+    }
 }

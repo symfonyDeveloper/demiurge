@@ -1,24 +1,60 @@
 {% extends 'base.html.twig' %}
-{% block header %}
-    <span style="font-size: 22px;">更新角色</span>
-{% endblock %}
+
 {% block body %}
     <div class="row">
         <div class="col-lg-12">
-            <form role="form" method="post" action="">
+
+            <form class="form-horizontal"  method="post" action="">
 
                 <div class="form-group">
-                    <label class="control-label" for="inputSuccess">角色名</label>
-                    <input type="text" name="role_name" value="{{ role.roleName }}" class="form-control" id="inputSuccess">
+                    <label class="control-label col-sm-1" for="role_name">角色名</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="role_name" value="{{ role.roleName }}"  class="form-control" id="role_name">
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="inputWarning">备注</label>
-                    <input type="text" name="remark" value="{{ role.remark }}" class="form-control" id="inputWarning">
+                    <label class="control-label col-sm-1" for="remark">备注</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="remark" value="{{ role.remark }}"  class="form-control" id="remark">
+                    </div>
                 </div>
 
-                <button type="submit" class="btn btn-default">提交</button>
-                <a href="javascript:history.back(-1)" class="btn btn-default">返回</a>
+                <div class="form-group tree well">
+                    <label class="control-label col-sm-1" for="menu">菜单</label>
+                    <div class="col-sm-10">
+                        {% for menu in firstMenu %}
+                        <ul>
+                            <li style="list-style:none">
+                                <span><input type="checkbox" name="menu[]" value="{{ menu.id }}" {% if menu.id in roleMenuIds %}checked{% endif %}/> {{ menu.name }}</span>
+                                {% for sm in generate_second_menu(menu.id) %}
+                                    <ul>
+                                        <li style="list-style:none">
+                                            <span> <input type="checkbox" name="menu[]" value="{{ sm.id }}" {% if sm.id in roleMenuIds %}checked{% endif %}/> {{ sm.name }}</span>
+                                            {% for ss in generate_second_menu(sm.id)  %}
+                                                <ul>
+                                                    <li style="list-style:none">
+                                                        <input type="checkbox" name="menu[]" value="{{ ss.id }}" {% if ss.id in roleMenuIds %}checked{% endif %}/> {{ ss.name }}</span>
+                                                    </li>
+                                                </ul>
+                                            {% endfor %}
+                                        </li>
+                                    </ul>
+                                {% endfor %}
+                            </li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="submit"></label>
+                    <div  class="col-sm-10">
+                        <button type="submit" class="btn btn-default" id="submit">提交</button>
+                        <a href="javascript:history.back(-1)" class="btn btn-default">返回</a>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

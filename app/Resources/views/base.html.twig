@@ -31,10 +31,13 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
+        {% set topMenu = get_menu_bread(app.request)|first %}
+
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 {% for menu in  generate_first_menu(app.user.id) %}
-                <li class="dropdown">
+
+                <li class="dropdown {% if menu.id == topMenu.id|default("") %}open{% endif %}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-size: 16px;">{{ menu.name }} </span> &nbsp;&nbsp;<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     {% for second in generate_second_menu(menu.id) %}
@@ -60,12 +63,16 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row">
-            {% block header %}页面头{% endblock %}
+                <span style="font-size: 22px;"> &nbsp;&nbsp;&nbsp;{{ get_current_route(app.request).name|default("") }}</span>
+            {% block headerButton %}{% endblock %}
             </div>
             <div class="row">
                 <ol class="breadcrumb">
                     {% block bread %}
-                        <li class="active">面包屑</li>
+                        {#{{ dump(get_menu_bread(app.request)) }}#}
+                        {% for menu in get_menu_bread(app.request) %}
+                        <li class="">{{ menu.name|default("") }}</li>
+                        {% endfor %}
                     {% endblock %}
                 </ol>
             </div>

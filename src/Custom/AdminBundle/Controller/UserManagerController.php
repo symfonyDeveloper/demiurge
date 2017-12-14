@@ -81,10 +81,30 @@ class UserManagerController extends BaseController
             $user->setEmail($request->request->get("email"));
             $user->setPassword(md5($request->request->get("password")));
             $em->flush();
+            $conn = $this->get('database_connection');
+            $sql = "delete from sys_user_role where user_id = :userId ";
+            $conn->executeQuery($sql, ["userId" =>  $user->getId()]);
+            $roleList = $request->get("role");
+            foreach ($roleList as $roleId) {
+                $sql = "INSERT INTO sys_user_role(user_id, role_id) VALUES (:userId, :roleId)";
+                $conn->executeQuery($sql, [
+                    "userId" => $user->getId(),
+                    "roleId" => $roleId
+                ]);
+            }
             return $this->redirect($this->generateUrl("admin_user_list"));
         }
+
+        $userRole = $this->getSystemService()->getUserRoles($this->getUser()->getId());
+        $roleList = $em->getRepository("CustomAdminBundle:SysRole")->findAll();
+        $userRoleIds = [];
+        foreach ($userRole as $value) {
+            array_push($userRoleIds, $value->getId());
+        }
         return $this->render("CustomAdminBundle:User:update.html.twig", [
-            "user" => $user
+            "user" => $user,
+            "userRole" => $userRoleIds,
+            "roleList" => $roleList
         ]);
     }
 
