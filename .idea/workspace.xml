@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eeef1d1-806a-4410-a87a-a00b89d0c323" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/MenuManagerController.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/MenuManagerController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/add.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/add.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/index.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/update.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/update.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/add.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/index.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/add.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/add.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/index.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/update.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/update.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/AdminService.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/AdminService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/Impl/AdminServiceImpl.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/Impl/AdminServiceImpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php" />
     </list>
     <ignored path="symfony_3_1_10.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,12 +50,12 @@
       <file leaf-file-name="RoleManagerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="87" column="46" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
+            <state relative-caret-position="-370">
+              <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
               <folding>
-                <marker date="1513232909948" expanded="true" signature="1064:1105" ph="select u fro... CustomAdminBundle" />
-                <marker date="1513232909948" expanded="true" signature="2964:3013" ph="delete from " />
-                <marker date="1513232909948" expanded="true" signature="3203:3272" ph="INSERT INTO sys_role_menu... " />
+                <marker date="1513233009490" expanded="true" signature="1064:1105" ph="select u fro... CustomAdminBundle" />
+                <marker date="1513233009490" expanded="true" signature="2939:2988" ph="delete from " />
+                <marker date="1513233009490" expanded="true" signature="3178:3247" ph="INSERT INTO sys_role_menu... " />
               </folding>
             </state>
           </provider>
@@ -435,12 +419,12 @@
       <workItem from="1512954605489" duration="23204000" />
       <workItem from="1513045396541" duration="112000" />
       <workItem from="1513130136582" duration="20179000" />
-      <workItem from="1513213900808" duration="13543000" />
+      <workItem from="1513213900808" duration="13648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164149000" />
+    <option name="totallyTimeSpent" value="164254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -921,12 +905,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="87" column="46" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
+        <state relative-caret-position="-370">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
           <folding>
-            <marker date="1513232909948" expanded="true" signature="1064:1105" ph="select u fro... CustomAdminBundle" />
-            <marker date="1513232909948" expanded="true" signature="2964:3013" ph="delete from " />
-            <marker date="1513232909948" expanded="true" signature="3203:3272" ph="INSERT INTO sys_role_menu... " />
+            <marker date="1513233009490" expanded="true" signature="1064:1105" ph="select u fro... CustomAdminBundle" />
+            <marker date="1513233009490" expanded="true" signature="2939:2988" ph="delete from " />
+            <marker date="1513233009490" expanded="true" signature="3178:3247" ph="INSERT INTO sys_role_menu... " />
           </folding>
         </state>
       </provider>

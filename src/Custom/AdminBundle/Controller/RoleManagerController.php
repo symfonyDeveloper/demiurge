@@ -82,7 +82,6 @@ class RoleManagerController extends BaseController
             $role->setRoleName($request->request->get("role_name"));
             $role->setRemark($request->request->get("remark"));
             $em->flush();
-            // TODO 角色菜单
             $conn = $this->get('database_connection');
             $sql = "delete from sys_role_menu where role_id = :roleId ";
             $conn->executeQuery($sql, ["roleId" =>  $role->getId()]);
