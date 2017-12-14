@@ -12,7 +12,7 @@
     -   配置在 app/config/services.yml
 * json 返回体定义
     -   [Custom\WebBundle\Utils\R](https://github.com/symfonyDeveloper/demiurge/blob/developer/src/Custom/WebBundle/Utils/R.php)
-* RBAC （基于角色的权限管理）
+* [RBAC](https://github.com/symfonyDeveloper/demiurge/blob/developer/doc/RBAC.md) （基于角色的权限管理）
 * 分页组件([knplabs/knp-paginator-bundle](https://github.com/KnpLabs/KnpPaginatorBundle))
     - 分页模板修改成bootstrap风格
     
