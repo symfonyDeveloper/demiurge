@@ -6,6 +6,7 @@
             <label for="parentId" class="col-sm-1 control-label">上级菜单</label>
             <div class="col-sm-10">
                 <select class="form-control" name="parentId">
+                    <option value="0">请选择</option>
                     {% for m in firstMenuList %}
                         <option value="{{ m.id }}" {% if menu.parentId == m.id %}selected{% endif %}>{{ m.name }}</option>
                         {% for smenu in secondMenuList %}

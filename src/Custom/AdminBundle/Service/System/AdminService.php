@@ -37,8 +37,12 @@ interface AdminService
      */
     public function getUserPerms(int $userId);
 
-    public function getAllRoutes();
+    /**
+     * @return array The perm string
+     */
+    public function getAllPerms();
 
+    public function getAllMenu();
     /**
      * @param $url
      * @return SysMenu

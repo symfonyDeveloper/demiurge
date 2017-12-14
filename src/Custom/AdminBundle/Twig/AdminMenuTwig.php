@@ -50,10 +50,13 @@ class AdminMenuTwig extends \Twig_Extension
         return $ret;
     }
 
-    public function createSecondMenu($firstMenuId) {
+    public function createSecondMenu($firstMenuId, $userOnly = true) {
         $menuList = [];
-
-        foreach (self::$menus as $menu) {
+        $allMenu = self::$menus;
+        if (!$userOnly) {
+            $allMenu = $this->getSystemService()->getAllMenu();
+        }
+        foreach ($allMenu as $menu) {
             if (!is_null($menu) && $menu->getParentId() == $firstMenuId) {
                 array_push($menuList, $menu);
             }

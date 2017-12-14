@@ -27,7 +27,7 @@
                         <ul>
                             <li style="list-style:none">
                                 <span><input type="checkbox" name="menu[]" value="{{ menu.id }}" {% if menu.id in roleMenuIds %}checked{% endif %}/> {{ menu.name }}</span>
-                                {% for sm in generate_second_menu(menu.id) %}
+                                {% for sm in generate_second_menu(menu.id, false) %}
                                     <ul>
                                         <li style="list-style:none">
                                             <span> <input type="checkbox" name="menu[]" value="{{ sm.id }}" {% if sm.id in roleMenuIds %}checked{% endif %}/> {{ sm.name }}</span>

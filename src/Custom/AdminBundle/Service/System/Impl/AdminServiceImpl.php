@@ -76,7 +76,13 @@ class AdminServiceImpl extends BaseService implements AdminService
         return array_unique($perms);
     }
 
-    public function getAllRoutes()
+    public function getAllMenu()
+    {
+        $menuRepo = $this->getRepository("CustomAdminBundle:SysMenu");
+        return $menuRepo->findAll();
+    }
+
+    public function getAllPerms()
     {
         $menuRepo = $this->getRepository("CustomAdminBundle:SysMenu");
         $roleList = $menuRepo->findAll();

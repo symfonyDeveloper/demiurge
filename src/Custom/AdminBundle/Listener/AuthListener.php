@@ -47,7 +47,7 @@ class AuthListener implements EventSubscriberInterface
             return ;
         }
         // 判断是否是后台菜单
-        $routeList = $this->getSystemService()->getAllRoutes();
+        $routeList = $this->getSystemService()->getAllPerms();
         if (!in_array($perm, $routeList)) {
             return ;
         }
