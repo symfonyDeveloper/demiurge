@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eeef1d1-806a-4410-a87a-a00b89d0c323" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Form/SystemSettingType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Form/UserType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Utils/MenuBuilder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Utils/MenuExtension.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Utils/MenuUtils.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/SystemSettingController.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Listener/AuthListener.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Listener/AuthListener.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/update.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/update.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Role/update.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/AdminService.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/AdminService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/Impl/AdminServiceImpl.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/Impl/AdminServiceImpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" afterPath="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" />
     </list>
     <ignored path="symfony_3_1_10.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,27 +64,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleManagerController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RoleManagerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="100" column="69" selection-start-line="100" selection-start-column="58" selection-end-line="100" selection-end-column="69" />
+            <state relative-caret-position="-2526">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <marker date="1513233009490" expanded="true" signature="1064:1105" ph="select u fro... CustomAdminBundle" />
-                <marker date="1513233009490" expanded="true" signature="2939:2988" ph="delete from " />
-                <marker date="1513233009490" expanded="true" signature="3178:3247" ph="INSERT INTO sys_role_menu... " />
+                <element signature="e#137#175#0#PHP" expanded="true" />
+                <marker date="1513235946117" expanded="true" signature="693:734" ph="select u fro... CustomAdminBundle" />
+                <marker date="1513235946117" expanded="true" signature="2568:2617" ph="delete from " />
+                <marker date="1513235946117" expanded="true" signature="2807:2876" ph="INSERT INTO sys_role_menu... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminMenuTwig.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminMenuTwig.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="256">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="e#130#182#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManagerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-156">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding>
+                <element signature="e#6#92#0#PHP" expanded="true" />
+                <element signature="e#137#176#0#PHP" expanded="true" />
+                <marker date="1513235916669" expanded="true" signature="694:736" ph="select u fro... CustomAdminBundle" />
+                <marker date="1513235916669" expanded="true" signature="2627:2668" ph="delete from " />
+                <marker date="1513235916669" expanded="true" signature="2627:2676" ph="delete from " />
+                <marker date="1513235916669" expanded="true" signature="2627:2677" ph="delete from " />
+                <marker date="1513235916669" expanded="true" signature="2866:2935" ph="INSERT into sys_user_role... " />
               </folding>
             </state>
           </provider>
@@ -175,8 +186,6 @@
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Menu/add.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/User/update.html.twig" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/MenuManagerController.php" />
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" />
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/doc/RBAC.md" />
@@ -187,6 +196,8 @@
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/AdminService.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Service/System/Impl/AdminServiceImpl.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php" />
+        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" />
+        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" />
       </list>
     </option>
   </component>
@@ -636,12 +647,12 @@
       <workItem from="1512954605489" duration="23204000" />
       <workItem from="1513045396541" duration="112000" />
       <workItem from="1513130136582" duration="20179000" />
-      <workItem from="1513213900808" duration="16428000" />
+      <workItem from="1513213900808" duration="16584000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167034000" />
+    <option name="totallyTimeSpent" value="167190000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,7 +723,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/asset/css/bootstrap.min.css" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Common/twitter_bootstrap_v3_pagination.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -984,22 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-            <element signature="e#137#176#0#PHP" expanded="true" />
-            <marker date="1513232764301" expanded="true" signature="987:1029" ph="select u fro... CustomAdminBundle" />
-            <marker date="1513232764301" expanded="true" signature="2920:2961" ph="delete from " />
-            <marker date="1513232764301" expanded="true" signature="2920:2969" ph="delete from " />
-            <marker date="1513232764301" expanded="true" signature="2920:2970" ph="delete from " />
-            <marker date="1513232764301" expanded="true" signature="3159:3228" ph="INSERT into sys_user_role... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1086,18 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="100" column="69" selection-start-line="100" selection-start-column="58" selection-end-line="100" selection-end-column="69" />
-          <folding>
-            <marker date="1513233009490" expanded="true" signature="1064:1105" ph="select u fro... CustomAdminBundle" />
-            <marker date="1513233009490" expanded="true" signature="2939:2988" ph="delete from " />
-            <marker date="1513233009490" expanded="true" signature="3178:3247" ph="INSERT INTO sys_role_menu... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Listener/AuthListener.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -1124,10 +1106,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Twig/AdminMenuTwig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="256">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="e#130#182#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
+            <element signature="e#137#176#0#PHP" expanded="true" />
+            <marker date="1513235916669" expanded="true" signature="694:736" ph="select u fro... CustomAdminBundle" />
+            <marker date="1513235916669" expanded="true" signature="2627:2668" ph="delete from " />
+            <marker date="1513235916669" expanded="true" signature="2627:2676" ph="delete from " />
+            <marker date="1513235916669" expanded="true" signature="2627:2677" ph="delete from " />
+            <marker date="1513235916669" expanded="true" signature="2866:2935" ph="INSERT into sys_user_role... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/SystemSettingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2526">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#137#175#0#PHP" expanded="true" />
+            <marker date="1513235946117" expanded="true" signature="693:734" ph="select u fro... CustomAdminBundle" />
+            <marker date="1513235946117" expanded="true" signature="2568:2617" ph="delete from " />
+            <marker date="1513235946117" expanded="true" signature="2807:2876" ph="INSERT INTO sys_role_menu... " />
           </folding>
         </state>
       </provider>

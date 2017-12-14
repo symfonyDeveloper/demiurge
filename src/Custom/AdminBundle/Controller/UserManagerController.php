@@ -10,15 +10,9 @@ namespace Custom\AdminBundle\Controller;
 
 
 use Custom\AdminBundle\Entity\AppUsers;
-use Custom\AdminBundle\Form\UserType;
-use Custom\AdminBundle\Service\Rbac\Dao\Impl\UserDaoImpl;
 use Custom\WebBundle\Common\BaseController;
 use Custom\AdminBundle\Utils\Perm;
 use Custom\WebBundle\Traits\Service\SysServiceTrait;
-use Custom\WebBundle\Utils\R;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
