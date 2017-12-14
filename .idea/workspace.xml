@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eeef1d1-806a-4410-a87a-a00b89d0c323" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/RBAC.md" afterPath="$PROJECT_DIR$/doc/RBAC.md" />
     </list>
     <ignored path="symfony_3_1_10.iws" />
@@ -79,11 +79,21 @@
         <entry file="file://$PROJECT_DIR$/doc/RBAC.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="372">
-                <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <first_editor relative-caret-position="1568">
+                <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="49" column="31" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Utils/MenuExtension.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Utils/MenuUtils.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/ServiceKernel.php" />
@@ -176,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/UserManagerController.php" />
         <option value="$PROJECT_DIR$/src/Custom/AdminBundle/Controller/RoleManagerController.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/doc/RBAC.md" />
       </list>
     </option>
@@ -340,12 +350,12 @@
       <workItem from="1512954605489" duration="23204000" />
       <workItem from="1513045396541" duration="112000" />
       <workItem from="1513130136582" duration="20179000" />
-      <workItem from="1513213900808" duration="14480000" />
+      <workItem from="1513213900808" duration="14974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165086000" />
+    <option name="totallyTimeSpent" value="165580000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,18 +426,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Custom/AdminBundle/Service/Rbac/Dao/Impl/UserDaoImpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="23" column="10" selection-start-line="16" selection-start-column="8" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="e#59#107#0#PHP" expanded="false" />
-            <marker date="1512980374020" expanded="true" signature="354:368" ph="select u fro... CustomAdminBundle" />
-            <marker date="1512980374020" expanded="true" signature="354:396" ph="select u fro... CustomAdminBundle" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/systemsetting/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -827,11 +825,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doc/RBAC.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="372">
-            <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <first_editor relative-caret-position="1568">
+            <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
             <folding />
           </first_editor>
           <second_editor />

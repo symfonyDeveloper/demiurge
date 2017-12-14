@@ -54,5 +54,6 @@ CREATE TABLE `sys_role_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='角色与菜单对应关系';  
 
 - 权限管理监听器只负责监听sys_menu 表中已经存在的路由，其他路由不走权限系统
+    * 如果后台和前台分开部署，修改权限监听器，监听所有路由
 - [权限监听器](https://github.com/symfonyDeveloper/demiurge/blob/developer/src/Custom/AdminBundle/Listener/AuthListener.php)
-
+- twig [模板方法封装](https://github.com/symfonyDeveloper/demiurge/blob/developer/src/Custom/AdminBundle/Twig/AdminMenuTwig.php)
