@@ -41,7 +41,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-size: 16px;">{{ menu.name }} </span> &nbsp;&nbsp;<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     {% for second in generate_second_menu(menu.id) %}
+                        {% if second.type == 1 %}
                         <li><a href="{{ path(second.url) }}">  &nbsp;{{ second.name }}</a></li>
+                        {% endif %}
                     {% endfor %}
                     </ul>
                 </li>
@@ -72,7 +74,6 @@
             <div class="row">
                 <ol class="breadcrumb">
                     {% block bread %}
-                        {#{{ dump(get_menu_bread(app.request)) }}#}
                         {% for menu in get_menu_bread(app.request) %}
                         <li class="">{{ menu.name|default("") }}</li>
                         {% endfor %}
