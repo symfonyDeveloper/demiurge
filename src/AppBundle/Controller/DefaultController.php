@@ -20,13 +20,6 @@ class DefaultController extends BaseController
         $response = $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
-        $response->setSharedMaxAge(3600);
-        $response->setMaxAge(3600);
-//        if (!empty($request->getETags()) && current($request->getETags()) == md5($response->getContent()))
-//        {
-            $response->setNotModified();
-            $response->setETag(md5($response->getContent()));
-//        }
 
         return $response;
     }
