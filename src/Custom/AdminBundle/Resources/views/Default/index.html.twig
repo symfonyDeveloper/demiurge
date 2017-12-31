@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h2>用户列表</h2>
+<table id="userList" lay-filter="test"></table>
+
+<script>
+    layui.use('table', function(){
+        var table = layui.table;
+
+        //第一个实例
+        table.render({
+            elem: '#userList'
+            ,height: 315
+            ,url: '/admin/' //数据接口
+            ,method: "post"
+            ,page: true //开启分页
+            ,cols: [[ //表头
+                {field: 'id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                ,{field: 'username', title: '用户名', width:80}
+                ,{field: 'email', title: '邮箱', width:240, sort: true}
+//                ,{field: 'isActive', title: '', width:80}
+/*                ,{field: 'sign', title: '签名', width: 177}
+                ,{field: 'experience', title: '积分', width: 80, sort: true}
+                ,{field: 'score', title: '评分', width: 80, sort: true}
+                ,{field: 'classify', title: '职业', width: 80}
+                ,{field: 'wealth', title: '财富', width: 135, sort: true}*/
+            ]]
+        });
+
+    });
+</script>
+{% endblock %}

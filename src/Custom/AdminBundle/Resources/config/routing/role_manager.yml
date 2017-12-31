@@ -1,0 +1,15 @@
+admin_role_list:
+    path: /list
+    defaults: { _controller: CustomAdminBundle:RoleManager:list }
+
+admin_role_add:
+    path: /add
+    defaults: { _controller: CustomAdminBundle:RoleManager:add }
+
+admin_role_update:
+    path: /update
+    defaults: { _controller: CustomAdminBundle:RoleManager:update }
+
+admin_role_delete:
+    path: /delete
+    defaults: { _controller: CustomAdminBundle:RoleManager:delete }

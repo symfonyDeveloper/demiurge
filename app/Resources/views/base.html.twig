@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>后台管理</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.css') }}">
+
+    <!-- Add custom CSS here -->
+    <link href="{{ asset('css/sb-admin.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/sb-admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.min.css') }}">
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="{{ asset('/css/morris-0.4.3.min.css') }}">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ path('custom_admin_homepage') }}">管理首页</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        {% set topMenu = get_menu_bread(app.request)|first %}
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                {% for menu in  generate_first_menu(app.user.id) %}
+
+                <li class="dropdown {% if menu.id == topMenu.id|default("") %}open{% endif %}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-size: 16px;">{{ menu.name }} </span> &nbsp;&nbsp;<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    {% for second in generate_second_menu(menu.id) %}
+                        {% if second.type == 1 %}
+                        <li><a href="{{ path(second.url) }}">  &nbsp;{{ second.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right navbar-user">
+                <li class="dropdown user-dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {{ app.user.username }} <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ path('admin_user_reset_passwd') }}"><i class="fa fa-user"></i> 重置密码 </a></li>
+                        <li><a href="{{ path('logout') }}"><i class="fa fa-power-off"></i> 退出 </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+<!-- /#body -->
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                {%  block title %}
+                <span style="font-size: 22px;"> &nbsp;&nbsp;&nbsp;{{ get_current_route(app.request).name|default("") }}</span>
+                {% endblock %}
+            {% block headerButton %}{% endblock %}
+            </div>
+            <div class="row">
+                <ol class="breadcrumb">
+                    {% block bread %}
+                        {% for menu in get_menu_bread(app.request) %}
+                        <li class="">{{ menu.name|default("") }}</li>
+                        {% endfor %}
+                    {% endblock %}
+                </ol>
+            </div>
+        </div>
+    </div>
+
+{% block body %}内容{% endblock %}
+</div>
+
+</div>
+    <!-- JavaScript -->
+<script src="{{ asset('/js/jquery-1.10.2.js') }}"></script>
+<script src="{{ asset('/js/bootstrap.js') }}"></script>
+
+<!-- Page Specific Plugins -->    <script src="{{ asset('/js/raphael-min.js') }}"></script>
+<script src="{{ asset('js/morris-0.4.3.min.js') }}"></script>
+<script src="{{ asset('js/morris/chart-data-morris.js') }}"></script>
+<script src="{{ asset('js/tablesorter/jquery.tablesorter.js') }}"></script>
+<script src="{{ asset('/js/tablesorter/tables.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form class="form-horizontal" method="post" action="">
+        <div class="form-group">
+            <label for="parentId" class="col-sm-1 control-label">上级菜单</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="parentId">
+                    <option value="0">请选择</option>
+                    {% for m in firstMenuList %}
+                        <option value="{{ m.id }}" {% if menu.parentId == m.id %}selected{% endif %}>{{ m.name }}</option>
+                        {% for smenu in secondMenuList %}
+                            {% if m.id == smenu.parentId %}
+                                <option value="{{ smenu.id }}" {% if menu.parentId == smenu.id %}selected{% endif %}>&nbsp;&nbsp;{{ smenu.name }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="col-sm-1 control-label">名称</label>
+            <div class="col-sm-10">
+                <input type="text" name="name" value="{{ menu.name }}" class="form-control" id="name" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="url" class="col-sm-1 control-label">路由名</label>
+            <div class="col-sm-10">
+                <input type="text" name="url" value="{{ menu.url }}" class="form-control" id="url" placeholder="路由名">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="perms" class="col-sm-1 control-label">权限标识</label>
+            <div class="col-sm-10">
+                <input type="text" name="perms" value="{{ menu.perms }}" class="form-control" id="perms" placeholder="权限标识">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="type" class="col-sm-1 control-label">类型</label>
+            <div class="col-sm-10">
+                <select class="form-control"name="type">
+                    <option value="0" {% if menu.type == 0 %}selected{% endif %}>目录</option>
+                    <option value="1" {% if menu.type == 1 %}selected{% endif %}>菜单</option>
+                    <option value="2" {% if menu.type == 2 %}selected{% endif %}>按钮</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="icon" class="col-sm-1 control-label">icon</label>
+            <div class="col-sm-10">
+                <input type="text" name="icon" value="{{ menu.icon }}" class="form-control" id="icon" placeholder="icon">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="orderNum" class="col-sm-1 control-label">排序</label>
+            <div class="col-sm-10">
+                <input type="number" name="orderNum" value="{{ menu.orderNum }}" class="form-control" id="orderNum" placeholder="排序">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-1" for="submit"></label>
+            <div  class="col-sm-10">
+                <button type="submit" class="btn btn-default" id="submit">提交</button>
+                <a href="javascript:history.back(-1)" class="btn btn-default">返回</a>
+            </div>
+        </div>
+    </form>
+{% endblock %}

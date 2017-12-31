@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+{% block headerButton %}
+    <a class="btn btn-default pull-right" href="{{ path('admin_menu_add') }}">添加</a>
+{% endblock %}
+{% block body %}
+    {# total items count #}
+{#    <div class="count">
+        {{ pagination.getTotalItemCount }}
+    </div>#}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover tablesorter">
+                <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>父id</th>
+                    <th>名称</th>
+                    <th>路由地址</th>
+                    <th>权限标识</th>
+                    <th>类型</th>
+                    <th>icon</th>
+                    <th>排序</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+
+                <tbody>
+        {% for menu in pagination %}
+            <tr>
+                <td>{{ menu.id }}</td>
+                <td>{{ menu.parentId }}</td>
+                <td>{{ menu.name}}</td>
+                <td>{{ menu.url }}</td>
+                <td>{{ menu.perms }}</td>
+                <td>
+                    {% if menu.type == 0 %}
+                        目录
+                    {% elseif menu.type == 1 %}
+                        菜单
+                    {% elseif menu.type == 2 %}
+                        按钮
+                    {% endif %}
+                </td>
+                <td><i class="layui-icon">{% autoescape false %}{{ menu.icon }}{% endautoescape %}</i></td>
+                <td>{{ menu.orderNum }}</td>
+                <td>
+                    {#{% if user.isActive == 1 %}启用{% else %}禁用{% endif %}#}
+                    <a href="{{ path('admin_menu_update', {id: menu.id}) }}">更新</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    {# display navigation #}
+    <div class="navigation">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+{% endblock %}

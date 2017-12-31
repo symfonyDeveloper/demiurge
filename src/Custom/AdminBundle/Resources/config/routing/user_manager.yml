@@ -1,0 +1,19 @@
+admin_user_list:
+    path: /list
+    defaults: { _controller: CustomAdminBundle:UserManager:list }
+
+admin_user_add:
+    path: /add
+    defaults: { _controller: CustomAdminBundle:UserManager:add }
+
+admin_user_update:
+    path: /update
+    defaults: { _controller: CustomAdminBundle:UserManager:update }
+
+admin_user_reset_passwd:
+    path: /reset/password
+    defaults: { _controller: CustomAdminBundle:UserManager:resetPasswd }
+
+admin_user_disable:
+    path: /disable
+    defaults: { _controller: CustomAdminBundle:UserManager:disable }

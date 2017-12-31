@@ -1,0 +1,16 @@
+custom_web_homepage:
+    path:     /custom
+    defaults: { _controller: CustomWebBundle:Default:index }
+    options:
+        api: true
+
+login:
+    path:     /login
+    defaults: { _controller: CustomWebBundle:Login:login }
+
+login_check:
+    path:     /login_check
+    defaults: { _controller: CustomWebBundle:Login:loginCheck }
+logout:
+    path:     /logout
+    defaults: { _controller: CustomWebBundle:Login:logout }

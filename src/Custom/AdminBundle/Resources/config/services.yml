@@ -1,0 +1,14 @@
+services:
+#    custom_admin.example:
+#        class: Custom\AdminBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    # 接口幂等性校验
+    api.idempotent:
+        class: Custom\AdminBundle\Listener\AuthListener
+        tags:
+            - { name:kernel.event_subscriber, event: kernel.request, method: onKernelRequest  }
+    app.twig_extension:
+        class: Custom\AdminBundle\Twig\AdminMenuTwig
+        public: false
+        tags:
+            - { name: twig.extension }

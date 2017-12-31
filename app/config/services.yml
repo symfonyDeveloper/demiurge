@@ -1,0 +1,22 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    # 登录
+    app.token_authenticator:
+        class: Custom\WebBundle\Security\TokenAuthenticator
+
+    app.redis_session_handle:
+        class: Custom\WebBundle\Handle\RedisSessionHandle
+        arguments: ["%session_handler_redis%"]
+
+    # 接口幂等性校验
+    api.idempotent:
+        class: Custom\WebBundle\Event\ApiIdempotentListener
+        tags:
+            - { name:kernel.event_subscriber, event: kernel.request, method: onKernelRequest  }
