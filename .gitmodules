@@ -1,0 +1,3 @@
+[submodule "QrCode"]
+	path = QrCode
+	url = https://github.com/symfonyDeveloper/QrCode.git
